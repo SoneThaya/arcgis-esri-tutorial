@@ -1,18 +1,20 @@
 import { Map } from "@esri/react-arcgis";
 import "./App.css";
+import Locations from "./Locations";
 
 function App() {
   return (
     <div className="App">
       <Map
         style={{ width: "100%", height: "100vh" }}
-        mapProperties={{ basemap: "satellite" }}
+        mapProperties={{ basemap: "dark-gray" }}
         viewProperties={{
-          // center: [-122.4443, 47.2529],
-          //zoom: 3,
-          scale: 100000,
+          zoom: 3,
+          center: [35, 35],
         }}
-      />
+      >
+        <Locations />
+      </Map>
     </div>
   );
 }
