@@ -1,5 +1,5 @@
-import { loadModules } from "esri-loader";
 import React, { useEffect } from "react";
+import { loadModules } from "esri-loader";
 
 const Locations = (props) => {
   const view = props.view;
@@ -41,14 +41,11 @@ const Locations = (props) => {
         geometry: geo2,
         symbol: sym2,
       });
-
       view.graphics.addMany([grph, grph2]);
 
       view.goTo([grph, grph2]);
     });
   }, []);
-
-  console.log("view", view);
 
   return null;
 };
