@@ -15,7 +15,7 @@ function App() {
           center: [-119.8047, 36.7381],
         }}
       >
-        {/* <Locations /> */}
+        <Locations />
         <AddLocation />
         <Widgets />
       </Map>

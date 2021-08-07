@@ -55,6 +55,7 @@ const AddLocation = ({ view }) => {
       });
 
       view.graphics.add(grph);
+      localStorage.setItem("locations", JSON.stringify(grph));
     });
   };
 
